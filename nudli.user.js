@@ -14,8 +14,8 @@
 
     function TextChanger() {
     'use strict';
-     var header = document.getElementsByClassName('site-name'); 
-      header.innerHTML="NUDLI - OE";
+     var header = document.getElementsByClassName('site-name')[0]; 
+      header.innerHTML+="NUDLI - OE";
     }
 
       
