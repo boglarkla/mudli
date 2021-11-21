@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -17,7 +17,4 @@
      var header = document.getElementsByClassName('navbar-brand')[0]; 
       header.innerHTML+="NUDLI - OE";
     }
-
-      
-}
 )();
