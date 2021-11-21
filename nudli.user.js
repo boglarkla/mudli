@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.9
+// @version      0.6.6.0
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -16,6 +16,8 @@
     'use strict';
      var header = document.getElementsByClassName('site-name')[0]; 
       header.innerHTML="NUDLI | OE";
+      
+      $(".bg-white").removeAttr("style");
       
       document.body.style.color = "#ffffff";
       document.body.style.backgroundColor = "#000000";
@@ -47,16 +49,6 @@
       
       // $(".bg-white").removeAttr("style");
       
-      /*  
-      var getCss = document.getElementById('jsbin-css').textContent;
-      var reWriteCssImportant = getCss.replace('!important', '');
-      document.getElementById('jsbin-css').textContent = reWriteCssImportant;
-      document.body.style.background='#f35'; 
-  */
-      
-      // td {height: 100px !important}
-      // $('.mytable td').attr('style', 'display: none !important');
-      // $(".node-with-inline-rule").removeAttr("style");
       
       var dashboardcards = document.getElementsByClassName("dashboard-card"); 
       for(var i = 0; i < dashboardcards.length; i++){
