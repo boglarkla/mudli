@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.6.0
+// @version      0.6.6.1
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -17,7 +17,7 @@
      var header = document.getElementsByClassName('site-name')[0]; 
       header.innerHTML="NUDLI | OE";
       
-      $(".bg-white").removeAttr("style");
+      // $(".bg-white").removeAttr("style");
       
       document.body.style.color = "#ffffff";
       document.body.style.backgroundColor = "#000000";
@@ -44,7 +44,7 @@
       
       var bgwhite = document.getElementsByClassName("bg-white"); 
       for(var i = 0; i < bgwhite.length; i++){
-        bgwhite[i].style.setProperty("background-color","#000000","important");
+        bgwhite[i].setAttribute('style', 'background-color: black !important');
       }
       
       // $(".bg-white").removeAttr("style");
