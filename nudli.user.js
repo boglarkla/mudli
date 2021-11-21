@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.0
+// @version      0.6.1
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -19,5 +19,11 @@
       
       document.body.style.backgroundColor = "#000000";
       document.getElementById("page").style.color = "#ffffff";
+      
+      document.getElementsByClassName("navbar").style.backgroundColor = "#000000";
+      document.getElementsByClassName("navbar").style.color = "#ffffff";
+      
+      document.getElementsByClassName("card-body").style.backgroundColor = "#000000";
+      document.getElementsByClassName("card-body").style.color = "#ffffff";
     }
 )();
