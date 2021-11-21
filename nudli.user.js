@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.6.5
+// @version      0.6.6.6
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -17,7 +17,14 @@
      var header = document.getElementsByClassName('site-name')[0]; 
       header.innerHTML="NUDLI | OE";
       
-      // $(".bg-white").removeAttr("style");
+      var links = document.getElementsByTagName("a");
+        for(var i=0;i<links.length;i++)
+        {
+            if(links[i].href)
+            {
+                links[i].style.color = "#ffffff";  
+            }
+        }
       
       document.body.style.color = "#ffffff";
       document.body.style.backgroundColor = "#000000";
@@ -160,26 +167,17 @@
         pagelink[i].style.color = "#ffffff";
       }
       
-      /*var rightside = document.getElementsByClassName("message-app"); 
-      for(var i = 0; i < w.length; i++){
-        rightside[i].style.backgroundColor = "#000000";
-        rightside[i].style.color = "#ffffff";
-      }*/
-      
+            
       document.getElementById("region-main").style.backgroundColor = "#000000";
       document.getElementById("region-main").style.color = "#ffffff";
       
       document.getElementById("nav-drawer").style.backgroundColor = "#000000";
       document.getElementById("nav-drawer").style.color = "#ffffff";
       
-          var links = document.getElementsByTagName("a");
-        for(var i=0;i<links.length;i++)
-        {
-            if(links[i].href)
-            {
-                links[i].style.color = "#ffffff";  
-            }
-        }
+      var bgwhite = document.getElementsByClassName("bg-white");
+      for(var i = 0; i < bgwhite.length; i++){
+        bgwhite[i].setAttribute ('style', 'background-color: #000000 !important;');
+      }
       
     }
 )();
