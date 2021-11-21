@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.3
+// @version      0.6.4
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -23,5 +23,8 @@
       
       document.getElementById("page-wrapper").style.backgroundColor = "#000000";
       document.getElementById("page-wrapper").style.color = "#ffffff";
+      
+      document.getElementById("coc-courselist").style.backgroundColor = "#000000";
+      document.getElementById("coc-courselist").style.color = "#ffffff";
     }
 )();
