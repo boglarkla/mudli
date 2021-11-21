@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.6
+// @version      0.6.5.7
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -105,8 +105,29 @@
         listitem[i].style.color = "#ffffff";
       }
       
+      var tabcontent = document.getElementsByClassName("tab-content"); 
+      for(var i = 0; i < tabcontent.length; i++){
+        tabcontent[i].style.backgroundColor = "#000000";
+        tabcontent[i].style.color = "#ffffff";
+      }
+      
+      var cardfooter = document.getElementsByClassName("card-footer"); 
+      for(var i = 0; i < cardfooter.length; i++){
+        cardfooter[i].style.backgroundColor = "#000000";
+        cardfooter[i].style.color = "#ffffff";
+      }
+      
+      var container = document.getElementsByClassName("course-info-container"); 
+      for(var i = 0; i < container.length; i++){
+        container[i].style.backgroundColor = "#000000";
+        container[i].style.color = "#ffffff";
+      }
+      
       document.getElementById("region-main").style.backgroundColor = "#000000";
       document.getElementById("region-main").style.color = "#ffffff";
+      
+      document.getElementById("nav-drawer").style.backgroundColor = "#000000";
+      document.getElementById("nav-drawer").style.color = "#ffffff";
       
           var links = document.getElementsByTagName("a");
         for(var i=0;i<links.length;i++)
