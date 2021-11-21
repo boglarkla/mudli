@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.7
+// @version      0.6.5.8
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -44,6 +44,18 @@
       for(var i = 0; i < bgwhite.length; i++){
         bgwhite[i].style.setProperty("background-color","#000000","important");
       }
+      $(".bg-white").removeAttr("style");
+      
+      /*  
+      var getCss = document.getElementById('jsbin-css').textContent;
+      var reWriteCssImportant = getCss.replace('!important', '');
+      document.getElementById('jsbin-css').textContent = reWriteCssImportant;
+      document.body.style.background='#f35'; 
+  */
+      
+      // td {height: 100px !important}
+      // $('.mytable td').attr('style', 'display: none !important');
+      // $(".node-with-inline-rule").removeAttr("style");
       
       var dashboardcards = document.getElementsByClassName("dashboard-card"); 
       for(var i = 0; i < dashboardcards.length; i++){
@@ -121,6 +133,12 @@
       for(var i = 0; i < container.length; i++){
         container[i].style.backgroundColor = "#000000";
         container[i].style.color = "#ffffff";
+      }
+      
+      var drop = document.getElementsByClassName("dropdown-menu"); 
+      for(var i = 0; i < drop.length; i++){
+        drop[i].style.backgroundColor = "#000000";
+        drop[i].style.color = "#ffffff";
       }
       
       document.getElementById("region-main").style.backgroundColor = "#000000";
