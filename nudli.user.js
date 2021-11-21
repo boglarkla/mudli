@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.2
+// @version      0.6.5.3
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -24,14 +24,48 @@
       document.getElementById("page-wrapper").style.backgroundColor = "#000000";
       document.getElementById("page-wrapper").style.color = "#ffffff";
       
+      document.getElementById("page-content").style.backgroundColor = "#000000";
+      document.getElementById("page-content").style.color = "#ffffff";
+      
       document.getElementById("coc-courselist").style.backgroundColor = "#000000";
       document.getElementById("coc-courselist").style.color = "#ffffff";
      
+      
+      var buttons = document.getElementsByClassName("btn"); 
+      for(var i = 0; i < buttons.length; i++){
+        buttons[i].style.backgroundColor = "#000000";
+        buttons[i].style.color = "#ffffff";
+      }
+      
+      
+      var cards = document.getElementsByClassName("card"); 
+      for(var i = 0; i < cards.length; i++){
+        cards[i].style.backgroundColor = "#000000";
+        cards[i].style.color = "#ffffff";
+      }
+      
+      var cardtexts = document.getElementsByClassName("card-text"); 
+      for(var i = 0; i < cardtexts.length; i++){
+        cardtexts[i].style.backgroundColor = "#000000";
+        cardtexts[i].style.color = "#ffffff";
+      }
+      
+      var cardbody = document.getElementsByClassName("card-body"); 
+      for(var i = 0; i < cardbody.length; i++){
+        cardbody[i].style.backgroundColor = "#000000";
+        cardbody[i].style.color = "#ffffff";
+      }
       
       var elements = document.getElementsByClassName("navbar"); 
       for(var i = 0; i < elements.length; i++){
         elements[i].style.backgroundColor = "#000000";
         elements[i].style.color = "#ffffff";
+      }
+      
+      var elements1 = document.getElementsByClassName("navbar-nav"); 
+      for(var i = 0; i < elements1.length; i++){
+        elements1[i].style.backgroundColor = "#000000";
+        elements1[i].style.color = "#ffffff";
       }
       
       var elements2 = document.getElementsByClassName("card-body"); 
