@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.6.7
+// @version      0.6.6.7.1
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -101,7 +101,7 @@
         elements2[i].style.color = "#ffffff";
       }
       
-      header.innerHTML+=" checkpoint1";
+     // header.innerHTML+=" checkpoint1";
       
         var elements3 = document.getElementsByClassName("fixed-top"); 
       for(var i = 0; i < elements3.length; i++){
