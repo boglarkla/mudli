@@ -101,6 +101,8 @@
         elements2[i].style.color = "#ffffff";
       }
       
+      header.innerHTML+=" checkpoint1";
+      
         var elements3 = document.getElementsByClassName("fixed-top"); 
       for(var i = 0; i < elements3.length; i++){
         elements3[i].style.backgroundColor = "#000000";
@@ -143,6 +145,8 @@
         drop[i].style.color = "#ffffff";
       }
       
+       header.innerHTML+=" checkpoint2";
+      
       var w = document.getElementsByClassName("w-100"); 
       for(var i = 0; i < w.length; i++){
         w[i].style.backgroundColor = "#000000";
@@ -167,17 +171,24 @@
         pagelink[i].style.color = "#ffffff";
       }
       
+       header.innerHTML+=" checkpoint3";
             
       document.getElementById("region-main").style.backgroundColor = "#000000";
       document.getElementById("region-main").style.color = "#ffffff";
       
+       header.innerHTML+=" checkpoint4";
+      
       document.getElementById("nav-drawer").style.backgroundColor = "#000000";
       document.getElementById("nav-drawer").style.color = "#ffffff";
+      
+       header.innerHTML+=" checkpoint5";
       
       var bgwhite = document.getElementsByClassName("bg-white");
       for(var i = 0; i < bgwhite.length; i++){
         bgwhite[i].setAttribute ('style', 'background-color: #000000 !important;');
       }
       
+      
+       header.innerHTML+=" checkpoint6";
     }
 )();
