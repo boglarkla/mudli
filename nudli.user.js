@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.1
+// @version      0.6.5.2
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -45,6 +45,15 @@
         elements3[i].style.backgroundColor = "#000000";
         elements3[i].style.color = "#ffffff";
       }
+      
+          var links = document.getElementsByTagName("a");
+        for(var i=0;i<links.length;i++)
+        {
+            if(links[i].href)
+            {
+                links[i].style.color = "#ffffff";  
+            }
+        } 
       
     }
 )();
