@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.6.3
+// @version      0.6.6.4
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -160,11 +160,11 @@
         pagelink[i].style.color = "#ffffff";
       }
       
-      var rightside = document.getElementsByClassName("message-app"); 
+      /*var rightside = document.getElementsByClassName("message-app"); 
       for(var i = 0; i < w.length; i++){
         rightside[i].style.backgroundColor = "#000000";
         rightside[i].style.color = "#ffffff";
-      }
+      }*/
       
       document.getElementById("region-main").style.backgroundColor = "#000000";
       document.getElementById("region-main").style.color = "#ffffff";
