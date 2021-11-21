@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.5.4
+// @version      0.6.5.5
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -19,6 +19,8 @@
       
       document.body.style.color = "#ffffff";
       document.body.style.backgroundColor = "#000000";
+      
+      document.getElementById("page").style.backgroundColor = "#000000";
       document.getElementById("page").style.color = "#ffffff";
       
       document.getElementById("page-wrapper").style.backgroundColor = "#000000";
@@ -30,6 +32,7 @@
       document.getElementById("coc-courselist").style.backgroundColor = "#000000";
       document.getElementById("coc-courselist").style.color = "#ffffff";
      
+      //document.body.style.setProperty('background-color', 'red', 'important');
       
       var buttons = document.getElementsByClassName("btn"); 
       for(var i = 0; i < buttons.length; i++){
@@ -39,8 +42,7 @@
       
       var bgwhite = document.getElementsByClassName("bg-white"); 
       for(var i = 0; i < bgwhite.length; i++){
-        bgwhite[i].style.backgroundColor = "#000000";
-        bgwhite[i].style.color = "#ffffff";
+        bgwhite[i].style.setProperty("background-color","#000000","important");
       }
       
       var dashboardcards = document.getElementsByClassName("dashboard-card"); 
