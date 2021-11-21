@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NudliScript
 // @namespace    http://tampermonkey.net/
-// @version      0.6.6.2
+// @version      0.6.6.3
 // @description  Pár változtatás just for fun
 // @author       boglarkla
 // @match        *://elearning.uni-obuda.hu/main/*
@@ -58,7 +58,7 @@
         dashboardcards[i].style.color = "#ffffff";
       }
       
-      var cards = document.getElementsByClassName("card"); 
+      var cards = document.getElementsByClassName("card-deck"); 
       for(var i = 0; i < cards.length; i++){
         cards[i].style.backgroundColor = "#000000";
         cards[i].style.color = "#ffffff";
@@ -88,7 +88,7 @@
         elements1[i].style.color = "#ffffff";
       }
       
-      var elements2 = document.getElementsByClassName("card-body"); 
+      var elements2 = document.getElementsByClassName("card"); 
       for(var i = 0; i < elements2.length; i++){
         elements2[i].style.backgroundColor = "#000000";
         elements2[i].style.color = "#ffffff";
@@ -134,6 +134,36 @@
       for(var i = 0; i < drop.length; i++){
         drop[i].style.backgroundColor = "#000000";
         drop[i].style.color = "#ffffff";
+      }
+      
+      var w = document.getElementsByClassName("w-100"); 
+      for(var i = 0; i < w.length; i++){
+        w[i].style.backgroundColor = "#000000";
+        w[i].style.color = "#ffffff";
+      }
+      
+      var icon = document.getElementsByClassName("icon"); 
+      for(var i = 0; i < w.length; i++){
+        icon[i].style.backgroundColor = "#000000";
+        icon[i].style.color = "#ffffff";
+      }
+      
+      var pageitem = document.getElementsByClassName("page-item"); 
+      for(var i = 0; i < w.length; i++){
+        pageitem[i].style.backgroundColor = "#000000";
+        pageitem[i].style.color = "#ffffff";
+      }
+      
+      var pagelink = document.getElementsByClassName("page-link"); 
+      for(var i = 0; i < w.length; i++){
+        pagelink[i].style.backgroundColor = "#000000";
+        pagelink[i].style.color = "#ffffff";
+      }
+      
+      var rightside = document.getElementsByClassName("message-app"); 
+      for(var i = 0; i < w.length; i++){
+        rightside[i].style.backgroundColor = "#000000";
+        rightside[i].style.color = "#ffffff";
       }
       
       document.getElementById("region-main").style.backgroundColor = "#000000";
